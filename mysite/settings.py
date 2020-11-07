@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "localhost",
-    ".pythonanywhere.com"
+    "turbohax00r21.pythonanywhere.com"
 ]
 
 
