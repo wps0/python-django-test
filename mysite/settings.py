@@ -27,8 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "localhost",
-    "pythonanywhere.com"
-    # tutaj domain serwera prod wrzucic
+    ".pythonanywhere.com"
 ]
 
 
