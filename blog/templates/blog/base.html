@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Post listing | TITLE OF THE BLOG</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
     <link rel="stylesheet" href="{% static 'css/global.css' %}" />
 </head>
 <body>
-    <div class="page-header">SOMEONE's Blog</div>
-    {% block content %}
-    {% endblock %}
+    <header class="header">
+        <h1><a href="{% url 'post_listing' %}">SOMEONE's Blog</a></h1>
+        {% if user.is_authentiacted %}
+        <a href="{% url 'post_new' %}" class="top-menu">New post</a>
+        {% endif %}
+    </header>
+    <section class="block_section">
+        {% block content %}
+        {% endblock %}
+    </section>
 </body>
 </html>

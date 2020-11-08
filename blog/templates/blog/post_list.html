@@ -1,8 +1,9 @@
 {% extends 'blog/base.html' %}
+
 {% block content %}
 <h1>Post listing</h1>
 <hr />
-<div class="row">
+<section class="post-list">
 {% for post in posts %}
     <article class="col-md-8">
         <h2><a href="{% url 'post_view' post.id %}">{{ post.title }}</a></h2>
@@ -11,5 +12,5 @@
         <hr />
     </article>
 {% endfor %}
-</div>
+</section>
 {% endblock %}

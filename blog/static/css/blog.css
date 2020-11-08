@@ -1,11 +1,12 @@
-body {
-    padding-left: 1em;
-}
-
 article h2 a {
     color: #6D00FF;
 }
 
 article *:not(hr) {
     padding-right: 15px;
+}
+
+.post-list {
+    width: 70%;
+    margin: auto;
 }

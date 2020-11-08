@@ -26,6 +26,7 @@ SECRET_KEY = '+xs6h0&8$i6j$$er^etuh$cl_bq4scdc0)$6cq2=((-e)m^xyh'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
     "localhost",
     "turbohax00r21.pythonanywhere.com"
 ]
