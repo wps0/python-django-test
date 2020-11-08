@@ -5,8 +5,3 @@ article h2 a {
 article *:not(hr) {
     padding-right: 15px;
 }
-
-.post-list {
-    width: 70%;
-    margin: auto;
-}

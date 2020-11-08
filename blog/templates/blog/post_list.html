@@ -5,7 +5,7 @@
 <hr />
 <section class="post-list">
 {% for post in posts %}
-    <article class="col-md-8">
+    <article class="container">
         <h2><a href="{% url 'post_view' post.id %}">{{ post.title }}</a></h2>
         <small>{{ post.publish_date }}</small>
         <p>{{ post.content | linebreaksbr }}</p>

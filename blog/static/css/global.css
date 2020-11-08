@@ -22,4 +22,6 @@ body {
 
 .block_section {
     padding-left: 1em;
+    width: 70%;
+    margin: auto;
 }
